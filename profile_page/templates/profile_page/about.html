@@ -1,0 +1,69 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Vineeth Menneni</title>
+		<meta name="description" content="Vineeth portfolio " />
+		<meta name="keywords" content="vineeth, menneni, django, python, flask, css transition" />
+		<meta name="author" content="Vineeth" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/skills.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/text-animation.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/demo.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/icons.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style3.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<div class='row'>
+					<div class='col-md-6 prof-head'>
+						<div class='head-profile-pic'>
+                			<img id="profile_picture" class="pull-left img-responsive" src="{% static 'img/vineeth.png'%}" style="width:30%;border-radius: 50%;">
+                			<h1 style="padding: 10% 0 0 0;margin-left: 40%; font-size: 2.5em;">Vineeth Menneni
+                			<small style="color: white;">Software Developer</small>
+                			</h1>
+                	
+                		</div>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-12'>
+				<!--text animation starts-->					
+					<dir class='container-fluid'>
+						<h1>About me...</h1>
+						<div class="container-text">
+  							<h1 class="heading" data-target-resolver></h1>
+						</div>
+						
+					</dir>
+				<!--text animation ends-->
+				</div>
+			</div>
+			<nav id="bt-menu" class="bt-menu">
+				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				<ul>
+					<li><a href="{% url 'home' %}" class="bt-icon icon-home">Home</a></li>
+					<li><a href="{% url 'about' %}" class="bt-icon icon-user-outline">About</a></li>
+					<li><a href="{% url 'skills' %}" class="bt-icon icon-sun">Skills</a></li>
+					<li><a href="{% url 'work' %}" class="bt-icon icon-windows">Work</a></li>
+					<li><a href="{% url 'blog' %}" class="bt-icon icon-speaker">Blog</a></li>
+					<li><a href="{% url 'contact' %}" class="bt-icon icon-bubble">Contact</a></li>	
+				</ul>
+			</nav>
+		</div><!-- /container -->
+	</body>
+	<script src="{% static 'js/text-animation.js' %}"></script>
+	<script src="{% static 'js/classie.js' %}"></script>
+	<script src="{% static 'js/borderMenu.js' %}"></script>
+</html>
